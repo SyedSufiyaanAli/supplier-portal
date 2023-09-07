@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './style/App.css'
+import {BrowserRouter,Routes, Route} from 'react-router-dom'
+import Login from './Components/Login/Login';
+import Registration from './Components/Registration/Registration';
+import RegistrationID from './Components/Registration/RegistrationID';
+import ForgetPassword from './Components/ForgotPassword/ForgotPassword';
+import ChangePassword from './Components/ForgotPassword/ChangePassword';
+import ChangePasswordConf from './Components/ForgotPassword/ChangePasswordConf';
+import HomeNav from './Components/Navbar/HomeNav';
+import OnboardingNav from './Components/Navbar/OnboardingNav';
 
-function App() {
+
+function App() 
+{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' Component={Login}></Route>
+        <Route path='/Registration' element={<Registration />}></Route>
+        <Route path='/RegistrationID' element={<RegistrationID />}></Route>
+        <Route path='/ForgotPassword' element={<ForgetPassword />}></Route>
+        <Route path='/ChangePassword' element={<ChangePassword />}></Route>
+        <Route path='/ChangePasswordConf' element={<ChangePasswordConf />}></Route>
+        <Route path='/HomeNav' element={<HomeNav/>}></Route>
+        <Route path='/OnboardingNav' element={<OnboardingNav/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+

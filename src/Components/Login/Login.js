@@ -28,7 +28,6 @@ function Login()
         .catch(function (error){
             console.log("error", error)
         })
-
     }
 
     return (

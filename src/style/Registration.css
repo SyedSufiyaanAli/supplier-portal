@@ -70,7 +70,7 @@ h3
     text-decoration: none;
 }
 
-input
+.reg-input
 {
     height: 28px;
     width: 85%;
@@ -85,7 +85,7 @@ input
     padding-top: 2px;
 }
 
-input:placeholder-shown {
+.reg-input:placeholder-shown {
     font-style: italic;
  }
 

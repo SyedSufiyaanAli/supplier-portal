@@ -61,7 +61,7 @@ h3
     display: flex;
 }
 
-input
+.Login-input
 {
     height: 28px;
     width: 85%;
@@ -76,7 +76,7 @@ input
     padding-top: 2px;
 }
 
-input:placeholder-shown {
+.Login-input:placeholder-shown {
     font-style: italic;
  }
 

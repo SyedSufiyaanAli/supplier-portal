@@ -16,22 +16,22 @@ function Registration()
                         
                         <div class='reg-inputfields'>
                             {<FaUserAlt className='Ricons'/>}
-                            <input type='text' placeholder='Supplier Name'/><br/>
+                            <input class="reg-input"type='text' placeholder='Supplier Name'/><br/>
                         </div>
 
                         <div class='reg-inputfields'>
                             {<FaEnvelope className='Ricons'/>}
-                            <input type='email' placeholder='Email ID'/><br/>
+                            <input class="reg-input" type='email' placeholder='Email ID'/><br/>
                         </div>
                         
                         <div class='reg-inputfields'>
                             {<FaPhone className='Ricons'/>}
-                            <input type='text' placeholder='Landline Number'/><br/>
+                            <input class="reg-input" type='text' placeholder='Landline Number'/><br/>
                         </div>
 
                         <div class='reg-inputfields'>
                             {<FaMobileAlt className='Ricons'/>}
-                            <input type='text' placeholder='Phone Number'/><br/>
+                            <input class="reg-input" type='text' placeholder='Phone Number'/><br/>
                         </div>
 
                         <div>

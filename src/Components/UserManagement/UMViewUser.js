@@ -19,12 +19,15 @@ function UMViewUser()
         </div>
         <div class="UMViewUser-container">
             <div class='UMViewUser-Title'>
-                <a href='UMCreateUser' class="UMViewUser-AddBtn"> Create User <FaPlusCircle/> </a>
+                <button class="UMViewUser-AddBtn">
+                    Create User <FaPlusCircle/>
+                </button>
                 <p>View User Details</p>
                 <button class="UMViewUser-ExportBtn">
                     Export All <FaFileExport/>
                 </button>
             </div>
+
             <div class="UMViewUser-EditViewContianer">
                 <div class="ExistingUsers-container">
                     <p class="ViewSitesContianer-title">Select an Existing User</p>

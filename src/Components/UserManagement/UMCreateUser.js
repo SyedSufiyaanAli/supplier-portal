@@ -6,9 +6,6 @@ import { FaPlusCircle,FaFileExport,FaSearch } from 'react-icons/fa'
 
 function UMCreateUser()
 {
-
-    
-
     return (
     <div>
         <div>

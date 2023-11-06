@@ -15,6 +15,7 @@ import UMViewSites from './Components/UserManagement/UMViewSites';
 import UMViewUser from './Components/UserManagement/UMViewUser';
 import UMRemoveUser from './Components/UserManagement/UMRemoveUser'
 import UMCreateUser from './Components/UserManagement/UMCreateUser';
+import PurchaseOrderMain from './Components/PurchaseOrder/PurchaseOrderMain';
 
 function App() 
 {
@@ -31,6 +32,7 @@ function App()
         <Route path='/OnboardingNav' element={<OnboardingNav/>}></Route>
         <Route path='/CostChange' element={<CostChange/>}></Route>
         <Route path='/Dashboard' element={<Dashboard/>}></Route>
+        <Route path='/PurchaseOrderMain' element={<PurchaseOrderMain/>}></Route>
         <Route path='/UserMgmtMain' element={<UserMgmtMain/>}></Route>
         <Route path='/UMViewSites' element={<UMViewSites/>}></Route>
         <Route path='/UMViewUser' element={<UMViewUser/>}></Route>

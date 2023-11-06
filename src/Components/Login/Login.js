@@ -5,7 +5,8 @@ import { FaEnvelope, FaLock } from "react-icons/fa";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-const Login=()=>{
+const Login=()=>
+{
     let navigate = useNavigate();
     const pathCompute = `/ChangePassword`
     const [supplierName, setsupplierName] = useState()

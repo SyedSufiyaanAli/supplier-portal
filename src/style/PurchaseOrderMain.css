@@ -120,7 +120,8 @@
     color: #00338E;
     margin-left: 23px;
 }
-.PurchaseOrderMain-searchbar{
+.PurchaseOrderMain-searchbar
+{
   border: 1px solid #757272;
   width:1200px;
   height: 35px;
@@ -128,9 +129,32 @@
   padding: 1px 10px;
   margin-left: 70px;
   margin-bottom: 3px;
+  display: flex;
+  justify-content: space-evenly;
 }
-.PurchaseOrderMain-Ricons-search{
-    margin-left: 12%;
+.PurchaseOrderMain-input
+{
+    height: 30px;
+    width: 1150px;
+    font-size: 16px;
+    font-style: none;
+    border: none;
+    outline: none;
+}
+
+.PurchaseOrderMain-input:placeholder-shown
+{
+    font-style: italic;
+    font-weight: 500;
+}
+.PurchaseOrderMain-Ricons-search
+{
+    margin-top: 4px;
+    float: right;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    color: #00338E;
 }
 .PurchaseOrderMain-Download
 {

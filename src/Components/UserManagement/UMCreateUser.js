@@ -1,11 +1,56 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../style/UMCreateUser.css'
 import HomeNav from '../Navbar/HomeNav'
 import HomeButton from '../Buttons/HomeButton'
-import { FaPlusCircle,FaFileExport,FaSearch } from 'react-icons/fa'
+import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 function UMCreateUser()
 {
+    let navigate = useNavigate();
+    const pathCompute = `/SiteAddConfrm.js`
+    const [supplierName, setsupplierName] = useState()
+    const [email, setemail] = useState()
+    const [mobile, setmobile] = useState()
+
+    function createUser(e)
+    {
+        e.preventDefault();
+        axios({
+            method: 'post',
+            url: "http://localhost:8080/suppliersite/createAdmUser",
+            data:Data,
+        })
+        .then(function (response)
+        {
+            e.preventDefault();
+           //navigate(pathCompute,{ state: { name: Data.supplierName}});
+        })
+        .catch(function (error){
+            console.log("error", error)
+            alert("Invalid")
+        })
+    }
+
+    const [Data,setData]=useState({
+        "supplierName": '',
+        "email": '',
+        "mobile": ''
+    });
+
+    const handleChange=(event)=>{
+        const{name,value}=event.target;
+        setData((prevData)=>({
+            ...prevData,
+            [name]:value,
+        
+        }));
+    };
+
+    const handleSubmit=(event)=>{
+        event.preventDefault();
+      };
+
     return (
     <div>
         <div>
@@ -26,15 +71,15 @@ function UMCreateUser()
                     <p class="BasicDetailsContianer-title">Basic Details</p>
                     <div class="BasicDetails-contents">
                        <p>Full Name</p>
-                       <input class="BasicDetails-input" placeholder='Enter Full Name'></input>
+                       <input class="BasicDetails-input" name="supplierName" value={Data.supplierName} onChange={handleChange} placeholder='Enter Full Name'></input>
                     </div>
                     <div class="BasicDetails-contents">
                        <p>Email ID</p>
-                       <input class="BasicDetails-input" placeholder='Enter Email ID'></input>
+                       <input class="BasicDetails-input" name="email" value={Data.email} onChange={handleChange} placeholder='Enter Email ID'></input>
                     </div>
                     <div class="BasicDetails-contents">
                        <p>Mobile Number</p>
-                       <input class="BasicDetails-input" placeholder='Enter Mobile Number'></input>
+                       <input class="BasicDetails-input" name="mobile" value={Data.mobile} onChange={handleChange} placeholder='Enter Mobile Number'></input>
                     </div>
                 </div>
 
@@ -126,7 +171,7 @@ function UMCreateUser()
                 </div>
             </div>
             <div class="ViewExistingSites-Buttons">
-                <button>Create User</button>
+                <button onClick={createUser}>Create User</button>
             </div>
         </div>
         

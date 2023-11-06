@@ -14,6 +14,7 @@ function ViewSupplierSite(){
     //         data:Data,
     //     })
     // }
+    
     return (
         <div class='UserMgmt-container'>
         <div class='HomeNav-container'>

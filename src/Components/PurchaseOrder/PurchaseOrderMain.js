@@ -6,9 +6,7 @@ import { FaHome} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import OrderSummary from './OrderSummary';
-const cors = require('cors');
-
-
+//const cors = require('cors');
 
 const PurchaseOrderMain=()=>{
 
@@ -25,23 +23,12 @@ const PurchaseOrderMain=()=>{
         fetchData();
     }, [])
 
-
     function tdclick(event){
         const pathCompute='/OrderSummary'
         if(currentData!=null){
         navigate(pathCompute,{ state: {id: currentData!= null ? currentData.poId : 0}});
     }};
 
-//     function ExporttoExcel(){
-//         const [data, setData] = React.useState([])
-
-//   React.useEffect(() => {
-//     const fetchData = () =>{
-//      axios.get('http://localhost:8080/purchaseorder/export/excel').then(r => setData(r.data) )
-//     }
-//     fetchData()
-//   }, [])
-//   }
     return (
 
     <div class='PurchaseOrderMain-container'>
@@ -121,7 +108,7 @@ const PurchaseOrderMain=()=>{
         </div>
      <div class='PurchaseOrderMain-searchbar'>
         <div class='PurchaseOrderMain-searchbar-container'>
-                <input placeholder="Search here"/>
+                <input class="PurchaseOrderMain-input" placeholder="Search here"/>
                 {<FaSearch className='PurchaseOrderMain-Ricons-search'/>}
         </div>
     </div>

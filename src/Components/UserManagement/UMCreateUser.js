@@ -173,9 +173,7 @@ function UMCreateUser()
             <div class="ViewExistingSites-Buttons">
                 <button onClick={createUser}>Create User</button>
             </div>
-        </div>
-        
-        
+        </div>        
     </div>
     )
 }

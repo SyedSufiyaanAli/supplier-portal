@@ -16,40 +16,30 @@ class ButtonGroup extends Component {
     render() {
         return (
             <div className="button-container">
-                <button className={`button ${this.state.activeButton === 'Button 1' ? 'active' : '' }`} onClick={() => this.handleButtonClick('Button 1')} >
-                    Button 1
+                <button 
+                    className={`button ${this.state.activeButton === 'Button 1' ? 'active' : '' }`} 
+                    onClick={() => this.handleButtonClick('Button 1')} >
+                    ASN Alerts
+                </button>
+                <button 
+                    className={`button ${this.state.activeButton === 'Button 2' ? 'active' : ''}`} 
+                    onClick={() => this.handleButtonClick('Button 2')}>
+                    PO Alerts
+                </button>
+                <button 
+                    className={`button ${this.state.activeButton === 'Button 3' ? 'active' : ''}`}
+                    onClick={() => this.handleButtonClick('Button 3')}>
+                    Return Alerts
                 </button>
                 <button
-                    className={`button ${
-                        this.state.activeButton === 'Button 2' ? 'active' : ''
-                    }`}
-                    onClick={() => this.handleButtonClick('Button 2')}
-                >
-                    Button 2
+                    className={`button ${this.state.activeButton === 'Button 4' ? 'active' : ''}`}
+                    onClick={() => this.handleButtonClick('Button 4')}>
+                    Invoices Alerts
                 </button>
                 <button
-                    className={`button ${
-                        this.state.activeButton === 'Button 3' ? 'active' : ''
-                    }`}
-                    onClick={() => this.handleButtonClick('Button 3')}
-                >
-                    Button 3
-                </button>
-                <button
-                    className={`button ${
-                        this.state.activeButton === 'Button 4' ? 'active' : ''
-                    }`}
-                    onClick={() => this.handleButtonClick('Button 4')}
-                >
-                    Button 4
-                </button>
-                <button
-                    className={`button ${
-                        this.state.activeButton === 'Button 5' ? 'active' : ''
-                    }`}
-                    onClick={() => this.handleButtonClick('Button 5')}
-                >
-                    Button 5
+                    className={`button ${this.state.activeButton === 'Button 5' ? 'active' : ''}`}
+                    onClick={() => this.handleButtonClick('Button 5')}>
+                    Deal Alerts
                 </button>
             </div>
         );

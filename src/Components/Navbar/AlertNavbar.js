@@ -1,3 +1,6 @@
+import React, {Component} from "react";
+import '../../style/AlertNavbar.css'
+
 class ButtonGroup extends Component {
     constructor(props) {
         super(props);

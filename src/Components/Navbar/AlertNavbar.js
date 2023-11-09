@@ -6,11 +6,11 @@ class ButtonGroup extends React.Component
     render() {
         return (
             <div className="button-container">
-                <button className="button">Button 1</button>
-                <button className="button">Button 2</button>
-                <button className="button">Button 3</button>
-                <button className="button">Button 4</button>
-                <button className="button">Button 5</button>
+                <button className="button">ASN Alerts</button>
+                <button className="button">PO Alerts</button>
+                <button className="button">Return Alerts</button>
+                <button className="button">Invoices Alerts</button>
+                <button className="button">Deal Alerts</button>
             </div>
         );
     }

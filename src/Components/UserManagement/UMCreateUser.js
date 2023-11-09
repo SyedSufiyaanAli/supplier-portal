@@ -6,14 +6,14 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
 function UMCreateUser()
-{
+{    
     let navigate = useNavigate();
-    const pathCompute = `/SiteAddConfrm.js`
+    const pathCompute = `/SiteAddCnfrm`
     const [supplierName, setsupplierName] = useState()
     const [email, setemail] = useState()
     const [mobile, setmobile] = useState()
-
-    function createUser(e)
+    
+    function getLoggedin(e)
     {
         e.preventDefault();
         axios({
@@ -21,14 +21,15 @@ function UMCreateUser()
             url: "http://localhost:8080/suppliersite/createAdmUser",
             data:Data,
         })
-        .then(function (response)
-        {
+        .then(function (response){
             e.preventDefault();
-           //navigate(pathCompute,{ state: { name: Data.supplierName}});
+            navigate(pathCompute
+                //,{ state: { name: Data.supplierName}}
+                );
         })
         .catch(function (error){
             console.log("error", error)
-            alert("Invalid")
+            alert("Invalid Credentials")
         })
     }
 
@@ -39,6 +40,7 @@ function UMCreateUser()
     });
 
     const handleChange=(event)=>{
+        event.preventDefault();
         const{name,value}=event.target;
         setData((prevData)=>({
             ...prevData,
@@ -67,7 +69,7 @@ function UMCreateUser()
                 <p>Create User</p>
             </div>
             <div class="UMCreateUser-BasicDetailsContianer">
-                <div class="BasicDetails-container">
+                <form class="BasicDetails-container">
                     <p class="BasicDetailsContianer-title">Basic Details</p>
                     <div class="BasicDetails-contents">
                        <p>Full Name</p>
@@ -81,7 +83,7 @@ function UMCreateUser()
                        <p>Mobile Number</p>
                        <input class="BasicDetails-input" name="mobile" value={Data.mobile} onChange={handleChange} placeholder='Enter Mobile Number'></input>
                     </div>
-                </div>
+                </form>
 
                 <div class="ModuleAccess-container">
                     <p class="ViewSitesContianer-title">Module Access</p>
@@ -171,9 +173,10 @@ function UMCreateUser()
                 </div>
             </div>
             <div class="ViewExistingSites-Buttons">
-                <button onClick={createUser}>Create User</button>
+                <button>Create User</button>
             </div>
-        </div>        
+        </div>
+        
     </div>
     )
 }

@@ -1,8 +1,3 @@
-.PurchaseOrderMain-header
-{
-    background-color: #00338E;
-    width: 100%;
-}
 .PurchaseOrderMain-container{
     height: 100%;
 }
@@ -15,24 +10,6 @@
     align-content: space-between;
 
 }
-
-.PurchaseOrderMain-topline
-{
-    width: 100%;
-    height: 90px;
-    align-content: center;
-    justify-content:space-between;
-    display: flex;
-}
-
-.PurchaseOrderMain-heading
-{
-    margin-top: -9px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-    color: white;
-    font-size: 30px;
-}
 .PurchaseOrderMain-component-heading{
     color: black;
     font-size: 30px;
@@ -40,24 +17,6 @@
     margin-left: 550px;
     display:flex;
     align-self: flex-end; */
-}
-
-.PurchaseOrderMain-logo-box
-{
-    height: 85%;
-    margin-top: 10px;
-    align-self: center;
-}
-
-.PurchaseOrderMain-logo
-{
-    height: 70px;
-}
-
-.PurchasOrderMain-component
-{
-    margin: 10px;   
-    width: 300px;
 }
 
 .PurchaseOrderMain-component-content

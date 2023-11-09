@@ -64,12 +64,12 @@ const Login=()=>
                         
                         <div class='login-inputfields'>
                             {<FaEnvelope className='Ricons'/>}
-                            <input type='text'  name="supplierName" value={Data.supplierName} onChange={handleChange} placeholder='Enter Supplier ID' required/><br/>
+                            <input type='text' class="Login-input" name="supplierName" value={Data.supplierName} onChange={handleChange} placeholder='Enter Supplier ID' required/><br/>
                         </div>
                         
                         <div class='login-inputfields'>
                             {<FaLock className='Ricons'/>}
-                            <input type='password' name="password" value={Data.password} onChange={handleChange} placeholder='Enter Password' required/><br/>
+                            <input type='password' class="Login-input" name="password" value={Data.password} onChange={handleChange} placeholder='Enter Password' required/><br/>
                         </div>
 
                         <a href='./ForgotPassword' id='login-forgotpass'>Forgot Password ?</a><br/>

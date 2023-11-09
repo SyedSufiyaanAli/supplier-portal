@@ -1,11 +1,9 @@
 import React, { useState,useEffect } from 'react'
-import logo from '../../images/KPMG-logo.jpg'
 import '../../style/PurchaseOrderMain.css'
 import {FaUserAlt,FaInfoCircle, FaBell, FaSearch, FaDownload, FaFilter, FaSort} from "react-icons/fa";
 import { FaHome} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
-import OrderSummary from './OrderSummary';
+import HomeNav from '../Navbar/HomeNav';
 //const cors = require('cors');
 
 const PurchaseOrderMain=()=>{
@@ -13,17 +11,18 @@ const PurchaseOrderMain=()=>{
     let navigate = useNavigate();
     const [currentData, setcurrentData] = useState(null);
 
-    useEffect(() => {
+    useEffect(() => 
+    {
         const fetchData = async () => {
-            const response = await fetch(`http://localhost:8080/purchaseorder/display/po`)
-            const newData = await response.json()
-            setcurrentData(newData)
-        };
-
+        const response = await fetch(`http://localhost:8080/purchaseorder/display/po`)
+        const newData = await response.json()
+        setcurrentData(newData)
+    };
         fetchData();
     }, [])
 
-    function tdclick(event){
+    function tdclick(event)
+    {
         const pathCompute='/OrderSummary'
         if(currentData!=null){
         navigate(pathCompute,{ state: {id: currentData!= null ? currentData.poId : 0}});
@@ -32,63 +31,8 @@ const PurchaseOrderMain=()=>{
     return (
 
     <div class='PurchaseOrderMain-container'>
-        <div class='PurchaseOrderMain-header'>
-            <div class='PurchaseOrderMain-topline'>
-                <div class='PurchaseOrderMain-heading'>
-                    <p>Supplier Portal</p>
-                </div>
-                <div class='PurchaseOrderMain-logo-box'>
-                    <img src={logo} alt='KPMG_logo' class='PurchaseOrderMain-logo'/>
-                </div>
-                <div class='PurchaseOrderMain-component'>
-                    <div class='PurchaseOrderMain-component-content'>
-                        <div class='PurchaseOrderMain-component-Logout'>
-                            {<FaUserAlt className='PurchaseOrderMain-Ricons'/>}
-                            <a class='PurchaseOrderMain-component-a'>User</a>
-                        </div>
-                        <div class='PurchaseOrderMain-component-About'>
-                            {<FaInfoCircle className='PurchaseOrderMain-Ricons'/>}
-                            <a class='PurchaseOrderMain-component-a'>About</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class='PurchaseOrderMain-menu'>
-                <div class='PurchaseOrderMain-menu-content'>
-                    <li> 
-                        <a href="#" class='PurchaseOrderMain-menu-content-dropdown-a'>Dashboard</a>
-                    </li>
-                    <li>
-                        <select class='PurchaseOrderMain-menu-content-dropdown'>
-                            <option selected><a href="#" class='PurchaseOrderMain-menu-content-dropdown-a'>Purchase Order</a></option>
-                            <option><a href="#" class='PurchaseOrderMain-menu-content-dropdown-a'>Retailer Returns</a></option>
-                            <option><a href="#" class='PurchaseOrderMain-menu-content-dropdown-a'>ASN</a></option>
-                        </select>
-                    </li>
-                    <li>
-                        <select class='PurchaseOrderMain-menu-content-dropdown'>
-                            <option selected><a href="#" class='PurchaseOrderMain-menu-content-dropdown-a'>Item Listing</a></option>
-                            <option><a href="#" class='PurchaseOrderMain-menu-content-dropdown-a'>Cost Change</a></option>
-                        </select>
-                    </li>
-                    <li>
-                        <select class='PurchaseOrderMain-menu-content-dropdown'>
-                            <option selected><a href="#" class='PurchaseOrderMain-menu-content-dropdown-a'>Customer Orders</a></option>
-                            <option><a href="#" class='PurchaseOrderMain-content-dropdown-a'>Customer Returns</a></option>
-                        </select>
-                    </li>
-                    <li>
-                        <a href="#" class='PurchaseOrderMain-menu-content-dropdown-a'>Invoices</a>
-                    </li>
-                    <li>
-                        <a href="#" class='PurchaseOrderMain-content-dropdown-a'>Deals</a>
-                    </li>
-                    <li>
-                        <a href="#" class='PurchaseOrderMain-content-dropdown-a'>Analytics</a>
-                    </li>
-                </div>   
-            </div>
+        <div>
+            <HomeNav/>
         </div>
 
     <div class='PurchaseOrderMain-description'>

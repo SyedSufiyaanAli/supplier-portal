@@ -16,6 +16,10 @@ import UMViewUser from './Components/UserManagement/UMViewUser';
 import UMRemoveUser from './Components/UserManagement/UMRemoveUser'
 import UMCreateUser from './Components/UserManagement/UMCreateUser';
 import PurchaseOrderMain from './Components/PurchaseOrder/PurchaseOrderMain';
+import SiteAddCnfrm from './Components/UserManagement/SiteAddCnfrm';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
+
+
 
 function App() 
 {
@@ -33,11 +37,13 @@ function App()
         <Route path='/CostChange' element={<CostChange/>}></Route>
         <Route path='/Dashboard' element={<Dashboard/>}></Route>
         <Route path='/PurchaseOrderMain' element={<PurchaseOrderMain/>}></Route>
+        <Route path='*' element={<ErrorPage/>}></Route>
         <Route path='/UserMgmtMain' element={<UserMgmtMain/>}></Route>
         <Route path='/UMViewSites' element={<UMViewSites/>}></Route>
         <Route path='/UMViewUser' element={<UMViewUser/>}></Route>
         <Route path='/UMRemoveUser' element={<UMRemoveUser/>}></Route>
         <Route path='/UMCreateUser' element={<UMCreateUser/>}></Route>
+        <Route path='/SiteAddCnfrm' element={<SiteAddCnfrm/>}></Route>
         
       </Routes>
     </BrowserRouter>

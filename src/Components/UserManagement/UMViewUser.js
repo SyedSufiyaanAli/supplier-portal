@@ -19,9 +19,9 @@ function UMViewUser()
         </div>
         <div class="UMViewUser-container">
             <div class='UMViewUser-Title'>
-                <button class="UMViewUser-AddBtn">
+                <a class="UMViewUser-AddBtn">
                     Create User <FaPlusCircle/>
-                </button>
+                </a>
                 <p>View User Details</p>
                 <button class="UMViewUser-ExportBtn">
                     Export All <FaFileExport/>

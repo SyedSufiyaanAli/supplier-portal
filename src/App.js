@@ -19,7 +19,7 @@ import PurchaseOrderMain from './Components/PurchaseOrder/PurchaseOrderMain';
 import SiteAddCnfrm from './Components/UserManagement/SiteAddCnfrm';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import AlertNavbar from './Components/Navbar/AlertNavbar';
-import AlertASN from './Components/Alerts/AlertASN';
+import AlertASN from './Components/Alerts/AlertMain';
 
 function App() 
 {
@@ -45,7 +45,7 @@ function App()
         <Route path='/UMCreateUser' element={<UMCreateUser/>}></Route>
         <Route path='/SiteAddCnfrm' element={<SiteAddCnfrm/>}></Route>
         <Route path='/AlertNavbar' element={<AlertNavbar/>}></Route>
-        <Route path='/AlertASN' element={<AlertASN/>}></Route>
+        <Route path='/AlertASN' element={<AlertMain/>}></Route>
 
         
       </Routes>

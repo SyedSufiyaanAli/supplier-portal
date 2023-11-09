@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import HomeNav from '../Navbar/HomeNav'
 import AlertNavbar from '../Navbar/AlertNavbar'
 
-function AlertASN() 
+function AlertMain() 
 {
     return (
       <div>
@@ -12,4 +12,4 @@ function AlertASN()
     )
 }
 
-export default AlertASN
+export default AlertMain

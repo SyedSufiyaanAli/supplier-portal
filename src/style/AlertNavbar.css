@@ -1,0 +1,22 @@
+.button-container {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: white;
+    color: #3498db;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

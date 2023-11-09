@@ -18,8 +18,7 @@ import UMCreateUser from './Components/UserManagement/UMCreateUser';
 import PurchaseOrderMain from './Components/PurchaseOrder/PurchaseOrderMain';
 import SiteAddCnfrm from './Components/UserManagement/SiteAddCnfrm';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
-
-
+import AlertNavbar from './Components/Navbar/AlertNavbar';
 
 function App() 
 {
@@ -44,6 +43,8 @@ function App()
         <Route path='/UMRemoveUser' element={<UMRemoveUser/>}></Route>
         <Route path='/UMCreateUser' element={<UMCreateUser/>}></Route>
         <Route path='/SiteAddCnfrm' element={<SiteAddCnfrm/>}></Route>
+        <Route path='/AlertNavbar' element={<AlertNavbar/>}></Route>
+
         
       </Routes>
     </BrowserRouter>

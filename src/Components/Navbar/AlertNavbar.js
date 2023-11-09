@@ -1,5 +1,5 @@
 import React from 'react';
-import './AlertNavbar.css';
+import '../../style/AlertNavbar.css';
 
 class ButtonGroup extends React.Component 
 {

@@ -20,6 +20,8 @@ import SiteAddCnfrm from './Components/UserManagement/SiteAddCnfrm';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import AlertNavbar from './Components/Navbar/AlertNavbar';
 import AlertMain from './Components/Alerts/AlertMain';
+import AlertASN from './Components/Alerts/AlertASN';
+
 
 function App() 
 {
@@ -46,6 +48,7 @@ function App()
         <Route path='/SiteAddCnfrm' element={<SiteAddCnfrm/>}></Route>
         <Route path='/AlertNavbar' element={<AlertNavbar/>}></Route>
         <Route path='/AlertMain' element={<AlertMain/>}></Route>
+        <Route path='/AlertASN' element={<AlertASN/>}></Route>
 
         
       </Routes>

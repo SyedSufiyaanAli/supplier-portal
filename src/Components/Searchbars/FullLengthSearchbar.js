@@ -1,18 +1,19 @@
-import React from 'react'
-import '../../style/FullLengthSearchbar.css'
-import {FaSearch} from "react-icons/fa";
+import React from 'react';
+import './FullLengthSearchbar.css';
 
-
-function FullLengthSearchbar()
-{
+const FullLengthSearchbar = () => {
     return (
-        <div class="FullLengthSearchbar-container">
-            <div class="FullLengthSearchbar-content">
-                <input class="FullLengthSearchbar-input" placeholder='Search'></input>
-                <FaSearch class="FullLengthSearchbar-icon"/>
+        <div className="search-bar">
+            <input
+                type="text"
+                className="search-input"
+                placeholder="Search..."
+            />
+            <div className="search-icon">
+                <i className="fas fa-search"></i>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default FullLengthSearchbar
+export default FullLengthSearchbar;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import HomeNav from '../Navbar/HomeNav'
 import AlertNavbar from '../Navbar/AlertNavbar'
-import FullLengthSearchbar from '../Searchbars/FullLengthSearchbar'
 
 function AlertASN() 
 {
@@ -9,7 +8,6 @@ function AlertASN()
       <div>
         {<HomeNav/>}
         {<AlertNavbar/>}
-        
       </div>
     )
 }

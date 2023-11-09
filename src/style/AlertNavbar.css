@@ -11,7 +11,7 @@
     flex: 1; /* Use flex to distribute available space evenly */
     margin: 0 5px; /* Add margin to create 10px space between buttons */
     padding: 10px 0; /* Adjust padding to maintain button appearance */
-    background-color: #3498db;
+    background-color: #00338E;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -20,6 +20,6 @@
 
 .button:active {
     background-color: white;
-    color: #3498db;
+    color: #00338E;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

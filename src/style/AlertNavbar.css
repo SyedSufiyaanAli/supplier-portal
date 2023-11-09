@@ -4,10 +4,10 @@
     align-items: center;
     background-color: white;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* Add a light grey border */
 }
 
-.button { 
+.button {
     width: 100%; /* Set the width to 100% to fill the container */
     padding: 10px 0; /* Adjust padding to maintain button appearance */
     background-color: #3498db;

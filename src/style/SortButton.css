@@ -1,0 +1,15 @@
+.sort-button {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove button border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for better button appearance */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    display: flex; /* Make the content centered horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.sort-button i {
+    margin-right: 5px; /* Add some spacing between icon and text */
+}

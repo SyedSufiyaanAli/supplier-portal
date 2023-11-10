@@ -18,11 +18,12 @@ import UMCreateUser from './Components/UserManagement/UMCreateUser';
 import PurchaseOrderMain from './Components/PurchaseOrder/PurchaseOrderMain';
 import SiteAddCnfrm from './Components/UserManagement/SiteAddCnfrm';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
-import AlertNavbar from './Components/Navbar/AlertNavbar';
 import AlertMain from './Components/Alerts/AlertMain';
 import AlertASN from './Components/Alerts/AlertASN';
-// import FilterButton from './Components/Buttons/FilterButton';
-
+import AlertPO from './Components/Alerts/AlertPO';
+import AlertDeals from './Components/Alerts/AlertDeals';
+import AlertInvoices from './Components/Alerts/AlertInvoices';
+import AlertReturns from './Components/Alerts/AlertReturns';
 
 function App() 
 {
@@ -30,6 +31,7 @@ function App()
     <BrowserRouter>
       <Routes>
         <Route path='/' Component={Login}></Route>
+        <Route path='*' element={<ErrorPage/>}></Route>
         <Route path='/Registration' element={<Registration />}></Route>
         <Route path='/RegistrationID' element={<RegistrationID />}></Route>
         <Route path='/ForgotPassword' element={<ForgetPassword />}></Route>
@@ -40,18 +42,18 @@ function App()
         <Route path='/CostChange' element={<CostChange/>}></Route>
         <Route path='/Dashboard' element={<Dashboard/>}></Route>
         <Route path='/PurchaseOrderMain' element={<PurchaseOrderMain/>}></Route>
-        <Route path='*' element={<ErrorPage/>}></Route>
         <Route path='/UserMgmtMain' element={<UserMgmtMain/>}></Route>
         <Route path='/UMViewSites' element={<UMViewSites/>}></Route>
         <Route path='/UMViewUser' element={<UMViewUser/>}></Route>
         <Route path='/UMRemoveUser' element={<UMRemoveUser/>}></Route>
         <Route path='/UMCreateUser' element={<UMCreateUser/>}></Route>
         <Route path='/SiteAddCnfrm' element={<SiteAddCnfrm/>}></Route>
-        <Route path='/AlertNavbar' element={<AlertNavbar/>}></Route>
         <Route path='/AlertMain' element={<AlertMain/>}></Route>
         <Route path='/AlertASN' element={<AlertASN/>}></Route>
-        {/* <Route path='/FilterButton' element={<FilterButton/>}></Route> */}
-
+        <Route path='/AlertDeals' element={<AlertDeals/>}></Route>
+        <Route path='/AlertPO' element={<AlertPO/>}></Route>
+        <Route path='/AlertReturns' element={<AlertReturns/>}></Route>
+        <Route path='/AlertInvoices' element={<AlertInvoices/>}></Route>
         
       </Routes>
     </BrowserRouter>

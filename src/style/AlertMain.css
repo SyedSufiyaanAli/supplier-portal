@@ -8,15 +8,15 @@
 }
 
 .button {
-    flex: 1; /* Use flex to distribute available space evenly */
-    margin: 0 5px; /* Add margin to create 10px space between buttons */
-    padding: 10px 0; /* Adjust padding to maintain button appearance */
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 0;
     background-color: #00338E;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.5s; /* Add a transition for smooth color change */
+    transition: background-color 0.5s;
 }
 
 .button:hover
@@ -24,4 +24,11 @@
     background-color: white;
     color: #00338E;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.button:disabled {
+    background-color: white;
+    color: #00338E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: default;
 }

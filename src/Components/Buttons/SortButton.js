@@ -1,10 +1,11 @@
 import React from 'react';
-import './SortButton.css';
+import '../../style/SortButton.css';
+import { FaSort } from 'react-icons/fa'
 
 const SortButton = () => {
     return (
         <button className="sort-button">
-            <i className="fas fa-sort"><FaSort/></i> Sort
+            Sort <i className="fas fa-sort"><FaSort/></i>
         </button>
     );
 };

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import HomeNav from '../Navbar/HomeNav'
 
-function AlertMain() 
+function AlertMain()
 {
     return (
       <div>

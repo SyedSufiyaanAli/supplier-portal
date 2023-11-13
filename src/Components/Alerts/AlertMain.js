@@ -7,11 +7,11 @@ function AlertMain()
       <div>
         {<HomeNav/>}
         <div className="button-container">
-                <button className="button"> ASN Alerts</button>
-                <button className="button"> Purchase Order Alerts</button>
-                <button className="button"> Return Alerts</button>
-                <button className="button"> Invoices Alerts</button>
-                <button className="button"> Deal Alerts</button>
+        <a className="button" href='/AlertASN'> ASN Alerts</a>
+                <a className="button" href='/AlertPO'> Purchase Order Alerts</a>
+                <a className="button" href='/AlertReturns'> Return Alerts</a>
+                <a className="button" href='/AlertInvoices'> Invoices Alerts</a>
+                <a className="button" href='/AlertDeals'> Deal Alerts</a>
         </div>
       </div>
     )

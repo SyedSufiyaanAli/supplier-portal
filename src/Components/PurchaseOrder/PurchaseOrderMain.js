@@ -1,10 +1,9 @@
 import React, { useState,useEffect } from 'react'
 import '../../style/PurchaseOrderMain.css'
-import {FaUserAlt,FaInfoCircle, FaBell, FaSearch, FaDownload, FaFilter, FaSort} from "react-icons/fa";
+import {FaBell, FaSearch, FaDownload, FaFilter, FaSort} from "react-icons/fa";
 import { FaHome} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import HomeNav from '../Navbar/HomeNav';
-//const cors = require('cors');
 
 const PurchaseOrderMain=()=>{
 

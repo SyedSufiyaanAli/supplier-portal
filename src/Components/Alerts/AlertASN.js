@@ -12,18 +12,20 @@ export class AlertASN extends Component {
     {
         backgroundColor: "white",
         color: "#00338E",
-        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)"
+        fontWeight: "700",
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+        border: "#00338E solid 1px"
     };
 
     return (
         <div>
             {<HomeNav/>}
             <div className="button-container">
-                <button className="button" style={btnStyle}> ASN Alerts</button>
-                <button className="button"> Purchase Order Alerts</button>
-                <button className="button"> Return Alerts</button>
-                <button className="button"> Invoices Alerts</button>
-                <button className="button"> Deal Alerts</button>
+                <a className="button" href='/AlertASN' style={btnStyle} disabled> ASN Alerts</a>
+                <a className="button" href='/AlertPO'> Purchase Order Alerts</a>
+                <a className="button" href='/AlertReturns'> Return Alerts</a>
+                <a className="button" href='/AlertInvoices'> Invoices Alerts</a>
+                <a className="button" href='/AlertDeals'> Deal Alerts</a>
             </div>
             {<FullLengthSearchbar/>}
             {<FilterButton/>}

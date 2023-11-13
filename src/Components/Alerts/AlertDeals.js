@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { useNavigate } from 'react-router';
 import HomeNav from '../Navbar/HomeNav'
 import FullLengthSearchbar from '../Searchbars/FullLengthSearchbar'
 import FilterButton from '../Buttons/FilterButton'
@@ -13,19 +14,20 @@ export class AlertDeals extends Component
     {
         backgroundColor: "white",
         color: "#00338E",
+        fontWeight: "700",
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-        pointer: "none"
+        border: "#00338E solid 1px"
     };
-
+ 
     return (
         <div>
             {<HomeNav/>}
             <div className="button-container">
-                <button className="button"> ASN Alerts</button>
-                <button className="button"> Purchase Order Alerts</button>
-                <button className="button"> Return Alerts</button>
-                <button className="button"> Invoices Alerts</button>
-                <button className="button" style={btnStyle} disabled> Deal Alerts</button>
+                <a className="button" href='/AlertASN'> ASN Alerts</a>
+                <a className="button" href='/AlertPO'> Purchase Order Alerts</a>
+                <a className="button" href='/AlertReturns'> Return Alerts</a>
+                <a className="button" href='/AlertInvoices'> Invoices Alerts</a>
+                <a className="button" href='/AlertDeals' style={btnStyle} disabled> Deal Alerts</a>
             </div>
             {<FullLengthSearchbar/>}
             {<FilterButton/>}

@@ -18,12 +18,12 @@ import UMCreateUser from './Components/UserManagement/UMCreateUser';
 import PurchaseOrderMain from './Components/PurchaseOrder/PurchaseOrderMain';
 import SiteAddCnfrm from './Components/UserManagement/SiteAddCnfrm';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
-import AlertMain from './Components/Alerts/AlertMain';
 import AlertASN from './Components/Alerts/AlertASN';
 import AlertPO from './Components/Alerts/AlertPO';
 import AlertDeals from './Components/Alerts/AlertDeals';
 import AlertInvoices from './Components/Alerts/AlertInvoices';
 import AlertReturns from './Components/Alerts/AlertReturns';
+import InvoicesMain from './Components/Invoices/InvoicesMain';
 
 function App() 
 {
@@ -48,12 +48,12 @@ function App()
         <Route path='/UMRemoveUser' element={<UMRemoveUser/>}></Route>
         <Route path='/UMCreateUser' element={<UMCreateUser/>}></Route>
         <Route path='/SiteAddCnfrm' element={<SiteAddCnfrm/>}></Route>
-        <Route path='/AlertMain' element={<AlertMain/>}></Route>
         <Route path='/AlertASN' element={<AlertASN/>}></Route>
         <Route path='/AlertDeals' element={<AlertDeals/>}></Route>
         <Route path='/AlertPO' element={<AlertPO/>}></Route>
         <Route path='/AlertReturns' element={<AlertReturns/>}></Route>
         <Route path='/AlertInvoices' element={<AlertInvoices/>}></Route>
+        <Route path='/InvoicesMain' element={<InvoicesMain/>}></Route>
         
       </Routes>
     </BrowserRouter>

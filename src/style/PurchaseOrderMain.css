@@ -230,35 +230,6 @@ li
     background-color: #00338E;
     border-radius: 7px;
     align-content: space-between;
-   }   
-table{
-    width:1000px;
-    align-content: space-between;
-    margin-left: px;
-    border-radius: 13px;
-}
-th{
-    background-color: #00338E;
-    height:35px;
-    color:white;
-    }
-td{
-    text-align:justify;
-}
-.table-content::-webkit-scrollbar {
-    width: 8px;
-}
-.table-content::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-    height: 200px;
-    border-radius: 5px;
-  }
-.table-content::-webkit-scrollbar-thumb {
-    background-color: #00338E;
-    border-radius: 5px;
-    height: 200px;
- }
+   }
 
- 
 
- 

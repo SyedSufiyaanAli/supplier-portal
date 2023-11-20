@@ -24,6 +24,7 @@ import AlertDeals from './Components/Alerts/AlertDeals';
 import AlertInvoices from './Components/Alerts/AlertInvoices';
 import AlertReturns from './Components/Alerts/AlertReturns';
 import InvoicesMain from './Components/Invoices/InvoicesMain';
+import CreateInvoices from './Components/Invoices/CreateInvoices';
 
 function App() 
 {
@@ -54,6 +55,7 @@ function App()
         <Route path='/AlertReturns' element={<AlertReturns/>}></Route>
         <Route path='/AlertInvoices' element={<AlertInvoices/>}></Route>
         <Route path='/InvoicesMain' element={<InvoicesMain/>}></Route>
+        <Route path='/CreateInvoices' element={<CreateInvoices/>}></Route>
         
       </Routes>
     </BrowserRouter>

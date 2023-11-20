@@ -49,7 +49,7 @@
 
 table
 {
-  background-color: antiquewhite;
+  background-color: #effaff;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -68,6 +68,7 @@ td
 {
   padding: 10px;
   font-weight: 500;
+  justify-items: center;
 }
 
 td button
@@ -78,7 +79,6 @@ td button
   border: none;
   border-radius: 5px;
   padding: 8px;
-  margin: 5px;
   display: flex;
 }
 

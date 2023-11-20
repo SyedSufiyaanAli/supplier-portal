@@ -4,9 +4,10 @@ import { FaFileUpload } from "react-icons/fa";
 
 function UploadButton() {
   return (
-    <button class="UploadButton">
-        {<FaFileUpload class="UploadButton-icon"/>} <div>Upload File</div>
-    </button>
+    <div class="upload-btn-wrapper">
+      <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+      <input type="file" name="myfile" />
+  </div>
   )
 }
 

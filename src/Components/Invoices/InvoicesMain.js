@@ -113,7 +113,7 @@ export class InvoicesMain extends Component {
                             <td> <i>{<FaCloudDownloadAlt/>}</i>  </td>
                         </tr>
                         <tr>
-                        <td>INV-12001359</td>
+                            <td>INV-12001359</td>
                             <td>21-April-2023</td>
                             <td>Standard</td>
                             <td>INR</td>
@@ -129,8 +129,6 @@ export class InvoicesMain extends Component {
                     </tbody>
                 </table>
             </div>
-            
-            
         </div>
     )
   }

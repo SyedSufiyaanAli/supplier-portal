@@ -1,38 +1,30 @@
-.upload-btn-wrapper 
-{
+.upload-btn-wrapper {
     position: relative;
     overflow: hidden;
     display: inline-block;
-}
-
-.fa 
-{
+  }
+  .fa {
     margin-left: 10px;
     padding: 10px;
     background: white;
-    color : #0e5a33;
+    color : #00338E;
     border-radius: 50%;
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.btn 
-{
-    border: 2px solid #0e5a33;
-    background-color: #0e5a33;
-    box-shadow: 8px 8px 18px 0px rgba(84, 181, 119, 0.3) !important;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  .btn {
+    border: 2px solid #00338E;
+    background-color: #00338E;
     font-size: 18px;
     padding: 5px 5px 5px 28px;
     border-radius: 25px;
     color: white;
-}
-
-.btn:before
-{
+  }
+  .Uploadbtn:before{
     content: "";
       position: absolute;
       top: 0;
@@ -48,4 +40,17 @@
       -webkit-transform: translate(-105%, 0);
       transform: translate(-105%, 0);
       background-color: rgba(255, 255, 255, 0.8);
-}
+  }
+  .Uploadbtn:hover:before{
+      opacity: 0;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+  }
+  .upload-btn-wrapper input[type=file] 
+  {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }

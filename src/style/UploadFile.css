@@ -25,9 +25,9 @@
   border-radius: 24px;
   color: white;
   display: inline;
-  
-  
+  cursor: pointer;
   }
+
   .Uploadbtn:before{
     content: "";
     position: absolute;
@@ -44,11 +44,13 @@
     -webkit-transform: translate(-105%, 0);
     transform: translate(-105%, 0);
     background-color: rgba(255, 255, 255, 0.8);
+    
   }
   .Uploadbtn:hover:before{
     opacity: 0;
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
+    
   }
 
 .upload-btn-wrapper input[type=file] 
@@ -58,10 +60,12 @@
   left: 0;
   top: 0;
   opacity: 0;
+  cursor: pointer;
 }
 
 .upload-btn-wrapper text
 {
   font-size: 12px;
   font-weight: 500;
+  cursor: pointer;
 }

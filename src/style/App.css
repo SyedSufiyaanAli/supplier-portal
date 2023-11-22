@@ -38,6 +38,13 @@
   }
 }
 
+input
+{
+  box-sizing: border-box;
+  padding-left: 10px;
+  outline: none;
+}
+
 .TableContainer
 {
     width: 99% !important;

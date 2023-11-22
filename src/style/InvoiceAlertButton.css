@@ -1,0 +1,33 @@
+.InvoiceAlertButton
+{
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    float: right;
+    font-size: 16px;
+    background-color: #00338E;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.InvoiceAlertButton:hover
+{
+    background-color: white ;
+    color: #00338E;
+    border: 3px solid #00338E;
+    
+}
+
+.InvoiceAlertButton-icon
+{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;   
+}
+

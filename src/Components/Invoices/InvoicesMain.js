@@ -20,7 +20,7 @@ export class InvoicesMain extends Component {
                 </div>
             </div>
             <FullLengthSearchbar/>
-            <a className='CreateInvBtn'>Create New Invoice &nbsp; {<FaPlusCircle/>}</a>
+            <a href='/CreateInvoices' className='CreateInvBtn'>Create New Invoice &nbsp; {<FaPlusCircle/>}</a>
             <ExportButton/>
             <FilterButton/>
             <SortButton/>

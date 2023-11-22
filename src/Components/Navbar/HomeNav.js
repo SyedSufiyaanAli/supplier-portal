@@ -58,7 +58,7 @@ function HomeNav() {
                     </select>
                 </li>
                 <li>
-                    <a href="#" class='HomeNav-menu-content-dropdown-a'>Invoices</a>
+                    <a href="/InvoicesMain" class='HomeNav-menu-content-dropdown-a'>Invoices</a>
                 </li>
                 <li>
                     <a href="#" class='HomeNav-menu-content-dropdown-a'>Deals</a>

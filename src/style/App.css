@@ -45,6 +45,18 @@ input
   outline: none;
 }
 
+input:disabled
+{
+  background-color: #bbbb;
+}
+
+textarea
+{
+  box-sizing: border-box;
+  padding: 10px;
+  outline: none;
+}
+
 .TableContainer
 {
     width: 99% !important;

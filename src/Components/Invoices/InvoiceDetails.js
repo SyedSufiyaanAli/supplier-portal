@@ -3,9 +3,18 @@ import HomeNav from '../Navbar/HomeNav'
 import {FaArrowLeft, FaCross, FaSearch, FaTrash} from "react-icons/fa";
 import '../../style/InvoiceDetails.css'
 import InvoiceAlertsButton from '../Buttons/InvoiceAlertsButtion'
+import FullLengthSearchbar from '../Searchbars/FullLengthSearchbar';
+import SortButton from '../Buttons/SortButton';
+import FilterButton from '../Buttons/FilterButton';
 
-export class InvoiceDetails extends Component {
-  render() {
+export class InvoiceDetails extends Component 
+{
+  state = { showing: true };
+
+  render() 
+  {
+    const { showing } = this.state;
+
     return (
         <div>
           <HomeNav/>
@@ -15,10 +24,8 @@ export class InvoiceDetails extends Component {
             {<InvoiceAlertsButton/>}
           </div>
           <br/>            
-          
-          <div className='InvoiceDetailsTitle'>Invoice Details</div>
- 
-          <div className='DetailContainer'>
+          <button className='InvoiceDetailsTitle' onClick={() => this.setState({ showing: !showing })} >Invoice Details</button>
+          <div className='DetailContainer' style={{ display: (showing ? '' : 'none') }}>
               <div className='left-pane'>
                 <div className='fieldName'>
                     <p>Creation Date :</p>
@@ -41,7 +48,6 @@ export class InvoiceDetails extends Component {
                   <input type='number' name='totalQty' disabled></input>
                 </div>
               </div>
-
               <div className='mid-pane'>
                 <div className='mid-container'>
                     <p>Selected PO(s) :</p>
@@ -56,23 +62,137 @@ export class InvoiceDetails extends Component {
                     <textarea name='deliveryAddress' rows="5" cols="50"></textarea>
                 </div>
               </div>
-
               <div className='right-pane'>
                 <div className='right-container'>
                     <div>
-                        <p>Attachments : <text className='fileFormat'>*  .pdf, .docx , .jpeg files only</text> </p> 
+                        Attachments : <text className='fileFormat'> ( .pdf, .docx , .jpeg files only )</text>
+                        <br/><br/>
                         <input className='AttachmentsInput' type='file' multiple></input>
-                    </div><br/><br/>
-                    <div>Invoice Number : <input name='invoiceNumber' disabled></input></div>
-                    <br/><br/>
+                    </div>
+                    <br/><br/><br/>
+                    <div className='right-div'>Invoice Number : <input name='invoiceNumber' disabled></input></div>
+                    <br/>
                     <div>
                         <p>Delivery Address :</p>
-                        <textarea name='deliveryAddress' rows="5" cols="50"></textarea>
+                        <textarea name='deliveryAddress' rows="3" cols="50"></textarea>
+                    </div>
+                    <br/>
+                    <div>
+                        Payment Status : <input name='paymentStatus' disabled></input>
                     </div>
                 </div>
               </div>
           </div>
-
+          <br/>
+          <div className='InvoiceDetailsTitle'>Item Details</div>
+          <div>
+              <div className='title'>
+                <text>Poppulated Items</text>
+              </div>
+              {<FullLengthSearchbar/>}
+              <div>
+                  {<SortButton/>}
+                  {<FilterButton/>}
+              </div>
+              <br/>
+              <div className='TableContainer'>
+                <table className='InvoiceTable'>
+                    <thead>
+                        <th>Item ID</th>
+                        <th>Purchase Order Number</th>
+                        <th>Product</th>
+                        <th>Purchase Order Quantity</th>
+                        <th>Inventory Quantity</th>
+                        <th>Cost</th>
+                        <th>Total Cost</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+              <a className='nextBtn'>Next</a>
+          </div>
         </div>
     )
   }

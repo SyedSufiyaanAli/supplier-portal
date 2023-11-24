@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import HomeNav from '../Navbar/HomeNav'
-import {FaArrowLeft, FaCross, FaSearch, FaTrash} from "react-icons/fa";
+import {FaArrowLeft, FaCross, FaFile, FaFileAlt, FaFileArchive, FaFileDownload, FaFileSignature, FaSearch, FaTrash} from "react-icons/fa";
 import '../../style/InvoiceDetails.css'
 import InvoiceAlertsButton from '../Buttons/InvoiceAlertsButtion'
 import FullLengthSearchbar from '../Searchbars/FullLengthSearchbar';
@@ -9,12 +9,8 @@ import FilterButton from '../Buttons/FilterButton';
 
 export class InvoiceDetails extends Component 
 {
-  state = { showing: true };
-
   render() 
   {
-    const { showing } = this.state;
-
     return (
         <div>
           <HomeNav/>
@@ -24,18 +20,18 @@ export class InvoiceDetails extends Component
             {<InvoiceAlertsButton/>}
           </div>
           <br/>            
-          <button className='InvoiceDetailsTitle' onClick={() => this.setState({ showing: !showing })} >Invoice Details</button>
-          <div className='DetailContainer' style={{ display: (showing ? '' : 'none') }}>
+          <div className='InvoiceDetailsTitle'>Invoice Details</div>
+          <div className='DetailContainer'>
               <div className='left-pane'>
                 <div className='fieldName'>
-                    <p>Creation Date :</p>
-                    <p>Invoice Type :</p>
-                    <p>Invoice Status :</p>
-                    <p>Currency :</p>
-                    <p>Total Amount :</p>
-                    <p>Due Amount :</p>
-                    <p>Netted Amount :</p>
-                    <p>Total Qty :</p>
+                    <p>Creation Date</p>
+                    <p>Invoice Type </p>
+                    <p>Invoice Status </p>
+                    <p>Currency</p>
+                    <p>Total Amount</p>
+                    <p>Due Amount</p>
+                    <p>Netted Amount</p>
+                    <p>Total Qty</p>
                 </div>
                 <div className='inputFields'>
                   <input type='date' name='creationDate'></input>
@@ -73,7 +69,7 @@ export class InvoiceDetails extends Component
                     <div className='right-div'>Invoice Number : <input name='invoiceNumber' disabled></input></div>
                     <br/>
                     <div>
-                        <p>Delivery Address :</p>
+                        <p>Sender Address :</p>
                         <textarea name='deliveryAddress' rows="3" cols="50"></textarea>
                     </div>
                     <br/>
@@ -83,8 +79,8 @@ export class InvoiceDetails extends Component
                 </div>
               </div>
           </div>
-          <br/>
-          <div className='InvoiceDetailsTitle'>Item Details</div>
+          <br/><br/>
+          <div className='ItemDetailsTitle'>Item Details</div>
           <div>
               <div className='title'>
                 <text>Poppulated Items</text>
@@ -191,8 +187,118 @@ export class InvoiceDetails extends Component
                     </tbody>
                 </table>
               </div>
-              <a className='nextBtn'>Next</a>
           </div>
+          <br/>
+          <div className='AddedItemsTitle'>Added Items</div>
+          <div>
+              <div className='title'>
+                <text>Approved Items</text>
+              </div>
+              {<FullLengthSearchbar/>}
+              <div>
+                  {<SortButton/>}
+                  {<FilterButton/>}
+              </div>
+              <br/>
+              <div className='TableContainer'>
+                <table className='InvoiceTable'>
+                    <thead>
+                        <th>Item ID</th>
+                        <th>Purchase Order Number</th>
+                        <th>Product</th>
+                        <th>Purchase Order Quantity</th>
+                        <th>Approved Item/Cost</th>
+                        <th>Total Cost</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>20</td>
+                            <td>₹40,000</td>
+                            <td>₹80,000</td>
+                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i>{<FaTrash/>}</i> </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>i-12003431-1996</td>
+                            <td>PO-3101290481</td>
+                            <td>Hp Laptop Pavillion</td>
+                            <td>200</td>
+                            <td> <input className='invQty' name='invQty'></input> </td>
+                            <td>₹40,000</td>
+                            <td> - </td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+          </div>
+          <br/>
+          <a className='nextBtn'>Next</a>
         </div>
     )
   }

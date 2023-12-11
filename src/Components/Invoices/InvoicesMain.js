@@ -15,7 +15,7 @@ export class InvoicesMain extends Component {
             <HomeNav/>
             <div class='Invoices-heading'>
                 <HomeButton/>
-                <div className='title'>
+                <div className='InvoiceTitle'>
                     <p>Invoices</p>
                 </div>
             </div>

@@ -26,6 +26,7 @@ import AlertReturns from './Components/Alerts/AlertReturns';
 import InvoicesMain from './Components/Invoices/InvoicesMain';
 import CreateInvoices from './Components/Invoices/CreateInvoices';
 import InvoiceDetails from './Components/Invoices/InvoiceDetails';
+import InvoiceItemDetails from './Components/Invoices/InvoiceItemDetails';
 
 function App() 
 {
@@ -58,6 +59,9 @@ function App()
         <Route path='/InvoicesMain' element={<InvoicesMain/>}></Route>
         <Route path='/CreateInvoices' element={<CreateInvoices/>}></Route>
         <Route path='/InvoiceDetails' element={<InvoiceDetails/>}></Route>
+        <Route path='/InvoiceItemDetails' element={<InvoiceItemDetails/>}></Route>
+
+        
         
       </Routes>
     </BrowserRouter>

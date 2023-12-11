@@ -15,15 +15,6 @@
     margin-left: 700px;
 }
 
-.DownloadTemplateButton:hover
-{
-    background-color: white ;
-    color: #00338E;
-    font-weight: bolder;
-    border: 3px solid #00338E;
-    
-}
-
 .DownloadTemplateButton-icon
 {
     height: 20px;

@@ -5,8 +5,9 @@
     margin-left: 4px;
 }
 
-.title
+.InvoiceTitle
 {
+    text-align: center;
     margin-bottom: 4px;
     margin-left: 20px;
     height: 40px;
@@ -14,7 +15,7 @@
     border-radius: 24px;
 }
 
-.title p
+.InvoiceTitle p
 {
     color: #00338E;
     margin-top: 3px;

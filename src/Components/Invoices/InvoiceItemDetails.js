@@ -7,7 +7,7 @@ import FullLengthSearchbar from '../Searchbars/FullLengthSearchbar';
 import SortButton from '../Buttons/SortButton';
 import FilterButton from '../Buttons/FilterButton';
 
-export class InvoiceDetails extends Component 
+export class InvoiceItemDetails extends Component 
 {
   render() 
   {
@@ -90,8 +90,7 @@ export class InvoiceDetails extends Component
                   {<SortButton/>}
                   {<FilterButton/>}
               </div>
-              <br/>
-              <div className='TableContainer'>
+              <br/><br/>
                 <table className='InvoiceTable'>
                     <thead>
                         <th>Item ID</th>
@@ -186,177 +185,12 @@ export class InvoiceDetails extends Component
                         </tr>
                     </tbody>
                 </table>
-              </div>
           </div>
           <br/>
-          <div className='AddedItemsTitle'>Added Items</div>
-          <div>
-              <div className='headingTitle'>
-                <text>Approved Items</text>
-              </div>
-              {<FullLengthSearchbar/>}
-              <div>
-                  {<SortButton/>}
-                  {<FilterButton/>}
-              </div>
-              <br/>
-              <div className='TableContainer'>
-                <table className='ApprovedItemsTable'>
-                    <thead>
-                        <th>Item ID</th>
-                        <th>Purchase Order Number</th>
-                        <th>Product</th>
-                        <th>Purchase Order Quantity</th>
-                        <th>Approved Item/Cost</th>
-                        <th>Total Cost</th>
-                        <th>Action</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                    </tbody>
-                </table>
-              </div>
-          </div>
-          <br/>
-
-          <div>
-              <div className='headingTitle'>
-                <text>Price Change Pending & Rejected Items</text>
-              </div>
-              <div className='TableContainer'>
-                <table className='ApprovedItemsTable'>
-                    <thead>
-                        <th>Item ID</th>
-                        <th>Purchase Order Number</th>
-                        <th>Product</th>
-                        <th>Purchase Order Quantity</th>
-                        <th>Approved Item/Cost</th>
-                        <th>Total Cost</th>
-                        <th>Action</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                        <tr>
-                            <td>i-12003431-1996</td>
-                            <td>PO-3101290481</td>
-                            <td>Hp Laptop Pavillion</td>
-                            <td>20</td>
-                            <td>₹40,000</td>
-                            <td>₹80,000</td>
-                            <td> <i>{<FaFileSignature/>}</i> &nbsp; <i class='DeleteIcon'>{<FaTrash/>}</i> </td>
-                        </tr>
-                    </tbody>
-                </table>
-              </div>
-          </div>
-          <br/>
-
-          <div className='InvoiceTotal'>
-            <text>Invoice Total :  &nbsp;&nbsp;&nbsp;₹ </text>
-            <input type="number" disabled></input>
-          </div>
-          <br/><br/><br/>
-          <a className='nextBtn'>Next</a>
+          <a className='nextBtn'>Add Items</a>
         </div>
     )
   }
 }
 
-export default InvoiceDetails
+export default InvoiceItemDetails

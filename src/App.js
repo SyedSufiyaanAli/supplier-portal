@@ -8,7 +8,6 @@ import ChangePassword from './Components/ForgotPassword/ChangePassword';
 import ChangePasswordConf from './Components/ForgotPassword/ChangePasswordConf';
 import HomeNav from './Components/Navbar/HomeNav';
 import OnboardingNav from './Components/Navbar/OnboardingNav';
-import CostChange from './Components/CostChange/CostChange';
 import Dashboard from './Components/Dashboard/Dashboard';
 import UserMgmtMain from './Components/UserManagement/UserMgmtMain';
 import UMViewSites from './Components/UserManagement/UMViewSites';
@@ -27,6 +26,8 @@ import InvoicesMain from './Components/Invoices/InvoicesMain';
 import CreateInvoices from './Components/Invoices/CreateInvoices';
 import InvoiceDetails from './Components/Invoices/InvoiceDetails';
 import InvoiceItemDetails from './Components/Invoices/InvoiceItemDetails';
+import CostChange from './Components/CostChange/CostChange';
+import CostChangeItemListing from './Components/CostChange/CostChangeItemListing';
 
 function App() 
 {
@@ -42,7 +43,6 @@ function App()
         <Route path='/ChangePasswordConf' element={<ChangePasswordConf />}></Route>
         <Route path='/HomeNav' element={<HomeNav/>}></Route>
         <Route path='/OnboardingNav' element={<OnboardingNav/>}></Route>
-        <Route path='/CostChange' element={<CostChange/>}></Route>
         <Route path='/Dashboard' element={<Dashboard/>}></Route>
         <Route path='/PurchaseOrderMain' element={<PurchaseOrderMain/>}></Route>
         <Route path='/UserMgmtMain' element={<UserMgmtMain/>}></Route>
@@ -60,6 +60,9 @@ function App()
         <Route path='/CreateInvoices' element={<CreateInvoices/>}></Route>
         <Route path='/InvoiceDetails' element={<InvoiceDetails/>}></Route>
         <Route path='/InvoiceItemDetails' element={<InvoiceItemDetails/>}></Route>
+        <Route path='/CostChange' element={<CostChange/>}></Route>
+        <Route path='/CostChangeItemListing' element={<CostChangeItemListing/>}></Route>
+
 
         
         

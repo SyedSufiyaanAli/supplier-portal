@@ -5,7 +5,7 @@ import { FaBell } from "react-icons/fa";
 function CostChangeAlertButton() {
   return (
     <button class="AlertButton">
-        <div>Cost Change Alerts</div> {<FaBell class="CostChangeAlertButton-icon"/>}
+        Cost Change Alerts {<FaBell class="CostChangeAlertButton-icon"/>}
     </button>
   )
 }

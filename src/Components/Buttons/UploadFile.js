@@ -2,7 +2,6 @@ import React from 'react'
 import '../../style/UploadFile.css'
 import {FaFileUpload} from "react-icons/fa";
 
-
 function UploadButton() {
   return (
     <div class="upload-btn-wrapper">

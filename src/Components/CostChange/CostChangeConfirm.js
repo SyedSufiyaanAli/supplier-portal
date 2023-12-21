@@ -1,46 +1,35 @@
 import React, { Component } from 'react'
-import '../../style/CostChangeItemListing.css'
+import '../../style/CostChangeConfirm.css'
 import HomeNav from '../Navbar/HomeNav'
 import CostChangeAlertButton from '../Buttons/CostChangeAlertButtion'
 import { FaFileDownload, FaArrowLeft } from "react-icons/fa";
+import TickMark from '../../images/TickMark.png'
 
-function CostChangeItemListing()
+function CostChangeConfirm()
 {
     return (
         <div>
             <HomeNav/>
             <div className='CC-title'>
-                <a href='/CostChange' className='backBtn'> <i>{<FaArrowLeft/>}</i>  Back </a>
-                <text>Cost Change - Item Listing</text>
+                <a href='/CostChangeItemListing' className='backBtn'> <i>{<FaArrowLeft/>}</i>  Back </a>
+                <text>Cost Change</text>
                 {<CostChangeAlertButton/>}
             </div>
             <br/>
-            <div className='CC-ItemListingContainer'>
-                <div className='CC-ItemListingDetails'>
-                    <div className='fieldName'>
-                        <p>Item #  </p>
-                        <p>Item Description :  </p><br/>
-                        <p>SKU : </p>
-                        <p>Category : </p>
-                        <p>Current Price : </p>
-                        <p>New Price : </p>
+            <div className='CC-ConfirmContainer'>
+                <div className='CC-ConfirmBox'>
+                    <br/><br/>
+                    <div className='CC-TickMark'>
+                        <img src={TickMark} className='CC-TickMarkImage'></img>
                     </div>
-                    <div className='inputFields'>
-                        <input type='text' name='ItemNumber'></input>
-                        <input type='text' name='ItemDescription' id='itemDescription'></input>
-                        <input type='text' name='SKU'></input>
-                        <input type='text' name='Category' ></input>
-                        <input type='number' name='CurrentPrice' ></input>
-                        <input type='number' name='NewPrice' ></input>
-                    </div>
-                </div>
-                <div className='CC-ItemListingImage'>
-                    <img src='../../images/item-image.png' alt='image'></img>
+                    <br/><br/>
+                    <text>Cost Change Request submitted successfully.</text>
                 </div>
             </div>
-            <button className='CC-ItemListingSubmitBtn'>Submit</button>
+            <br/>
+            <a href='/CostChange' className='CC-ConfirmBtn'>Continue</a>
         </div>
     )
 }
 
-export default CostChangeItemListing
+export default CostChangeConfirm

@@ -14,7 +14,7 @@ function CostChange()
         <div>
             <HomeNav/>
             <div className='CostChange-title'>
-                <text>Create Invoice</text>
+                <text>Cost Change</text>
                 {<CostChangeAlertButton/>}
             </div>
             <div class="CostChange-searchbar">

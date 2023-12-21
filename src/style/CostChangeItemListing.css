@@ -20,16 +20,16 @@
 
 .CC-ItemListingContainer
 {
-    
-    margin: 20px 60px;
+    margin: 3px 50px;
     border-radius: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
     display: flex;
+    height: 350px;
 }
 
 .CC-ItemListingDetails
 {
-    padding: 40px;
+    padding: 50px;
     width: 50%;
     display: flex;
 }
@@ -44,12 +44,11 @@
     width: 50%;
 }
 
-.CC-image
+.CC-ItemImage
 {
-    background-color: yellow;
-    padding: 30px;
-    margin: 10px;
-    width: 90%;
+    height: 65%;
+    width: 35%;
+    margin: 10%25%;
 }
 
 .CC-ItemListingSubmitBtn

@@ -16,7 +16,7 @@ function CostChangeItemListing()
             <HomeNav/>
             <div className='CC-title'>
                 <a href='/CostChange' className='backBtn'> <i>{<FaArrowLeft/>}</i>  Back </a>
-                <text>Cost Change - Item Listing</text>
+                <text>Item Listing</text>
                 {<CostChangeAlertButton/>}
             </div>
             <br/>
@@ -40,9 +40,9 @@ function CostChangeItemListing()
                     </div>
                 </div>
                 <div className='CC-ItemListingImage'>
-                    <img src='../../images/item-image.png' alt='image'></img>
+                    <img src={picture} alt='image' className='CC-ItemImage'></img>
                 </div>
-            </div>
+            </div><br/>
             <button className='CC-ItemListingSubmitBtn'>Submit</button>
         </div>
     )

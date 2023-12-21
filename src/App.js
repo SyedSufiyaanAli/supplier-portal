@@ -28,6 +28,7 @@ import InvoiceDetails from './Components/Invoices/InvoiceDetails';
 import InvoiceItemDetails from './Components/Invoices/InvoiceItemDetails';
 import CostChange from './Components/CostChange/CostChange';
 import CostChangeItemListing from './Components/CostChange/CostChangeItemListing';
+import CostChangeConfirm from './Components/CostChange/CostChangeConfirm';
 
 function App() 
 {
@@ -62,9 +63,7 @@ function App()
         <Route path='/InvoiceItemDetails' element={<InvoiceItemDetails/>}></Route>
         <Route path='/CostChange' element={<CostChange/>}></Route>
         <Route path='/CostChangeItemListing' element={<CostChangeItemListing/>}></Route>
-
-
-        
+        <Route path='/CostChangeConfirm' element={<CostChangeConfirm/>}></Route>    
         
       </Routes>
     </BrowserRouter>
